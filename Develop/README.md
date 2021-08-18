@@ -1,0 +1,1 @@
+{"github":"jamesbroski","email":"james.broski.5@gmail.com","title":"readmegenerator","description":"generating readme's","license":"MIT","installations":"npm i","test":"npm run test","contributor":"email me for the repo link"}
