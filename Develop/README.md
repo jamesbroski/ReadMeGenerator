@@ -1,8 +1,8 @@
-# ffff
-  ![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
+# ytytyytyt
+  ![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)
 
   ## Description
-  ffff
+  ytytyytt
 
   ## Table of Contents
   *[Installation](#installation)
@@ -22,22 +22,22 @@
   
 
   ## Usage
-  ffff
+  ttytyt
 
   ## License
-    This project is licensed with Apache 2.0.
+    This project is licensed with BSD 3.
     
 
   ## Contributing
-  ffff
+  tytytyyt
 
   ## Tests
-  test
+  npm test
 
   ## Questions
   "If you have any questions about the repo, open an issue or contact me directly at 
-  fffff. You can also find more of my work at ffff.
+  tyytyytyty. You can also find more of my work at tytytyty.
   
 
   ## License Links
-  [License: Apache 2.0](https://opensource.org/licenses/Apache-2.0)
+  [License: BSD 3](https://opensource.org/licenses/BSD-3-Clause)
