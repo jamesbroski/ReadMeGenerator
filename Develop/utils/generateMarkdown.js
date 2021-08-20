@@ -14,10 +14,7 @@ function renderLicenseBadge(license) {
     if (license === "BSD 3") {
       return `![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)`;
     }
-    // return `## License
-    // This project is licensed with ${license}.
-    // `;
-  }
+    
   return "";
 }
 
