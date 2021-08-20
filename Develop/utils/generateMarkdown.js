@@ -58,22 +58,29 @@ function generateMarkdown(data) {
   return `# ${data.nameProject}
   ${renderLicenseBadge(data.license)}
 
+  ## Description
+  ${data.description}
+
   ## Table of Contents
-  [installation](#installation)
-  [installation](#installation)
-  [installation](#installation)
-  [installation](#installation)
-  [installation](#installation)
-  [installation](#installation)
+  *[Installation](#installation)
+
+  *[Usage](#usage)
+
+  *[License](#license)
+
+  *[Contributing](#contributing)
+
+  *[Tests](#tests)
+
+  *[Questions](#questions)
 
   ## Installation
   ${data.installations}
   
 
   ## Usage
-  ${data.usage}
+  ${data.about}
 
-  
   ${renderLicenseSection(data.license)}
 
   ## Contributing
@@ -83,7 +90,9 @@ function generateMarkdown(data) {
   ${data.test}
 
   ## Questions
-  ${data.questions}
+  "If you have any questions about the repo, open an issue or contact me directly at 
+  ${data.email}. You can also find more of my work at ${data.github}.
+  
 
   ## License Links
   ${renderLicenseLink(data.license)}

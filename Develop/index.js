@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
-const generateMarkdown = require("./utils/generateMarkdown");
+const generateMarkdown = require("./utils/generateMarkdown.js");
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -41,11 +41,11 @@ const questions = [
     type: "input",
     message: "What commands should be run for tests?",
     name: "test",
-    default: "npm test",
+    default: "test",
   },
   {
     type: "input",
-    message: "How does a user need to know about this project",
+    message: "What should a user need to know about this project",
     name: "about",
   },
   {
