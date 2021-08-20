@@ -2,9 +2,21 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license !== "None") {
-    return `## License
-    This project is licensed with ${license}.
-    `;
+    if (license === "MIT") {
+      return `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`;
+    }
+    if (license === "GPL 3.0") {
+      return `![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)`;
+    }
+    if (license === "Apache 2.0") {
+      return `![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)`;
+    }
+    if (license === "BSD 3") {
+      return `![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)`;
+    }
+    // return `## License
+    // This project is licensed with ${license}.
+    // `;
   }
   return "";
 }
@@ -13,9 +25,18 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license !== "None") {
-    return `## License Link
-    //where returns the actual link of the license
-    `;
+    if (license === "MIT") {
+      return `[License: ${license}](https://opensource.org/licenses/MIT)`;
+    }
+    if (license === "GPL 3.0") {
+      return `[License: ${license}](https://www.gnu.org/licenses/gpl-3.0)`;
+    }
+    if (license === "Apache 2.0") {
+      return `[License: ${license}](https://opensource.org/licenses/Apache-2.0)`;
+    }
+    if (license === "BSD 3") {
+      return `[License: ${license}](https://opensource.org/licenses/BSD-3-Clause)`;
+    }
   }
   return "";
 }
@@ -23,24 +44,58 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
+  if (license !== "None") {
+    return `## License
+    This project is licensed with ${license}.
+    `;
+  }
+  return "";
   //creating my markdown with template strings
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
-
-  ## Description
-  ${data.description}
+  return `# ${data.nameProject}
+  ${renderLicenseBadge(data.license)}
 
   ## Table of Contents
+  [installation](#installation)
+  [installation](#installation)
+  [installation](#installation)
+  [installation](#installation)
+  [installation](#installation)
+  [installation](#installation)
+
+  ## Installation
+  ${data.installations}
+  
+
+  ## Usage
+  ${data.usage}
+
+  
+  ${renderLicenseSection(data.license)}
+
+  ## Contributing
+  ${data.contributor}
 
   ## Tests
   ${data.test}
 
-  ## Contribution
-  ${data.contributor}
+  ## Questions
+  ${data.questions}
+
+  ## License Links
+  ${renderLicenseLink(data.license)}
 `;
 }
 
 module.exports = generateMarkdown;
+
+// [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
+// [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+
+// [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+// [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)

@@ -17,8 +17,8 @@ const questions = [
   },
   {
     type: "input",
-    message: "What is your project's title?",
-    name: "title",
+    message: "What is the name of your project?",
+    name: "nameProject",
   },
   {
     type: "input",
@@ -29,11 +29,11 @@ const questions = [
     type: "list",
     message: "What kind of license does your project use?",
     name: "license",
-    choices: ["MIT", "FOnzi", "STP"],
+    choices: ["MIT", "Apache 2.0", "GPL 3.0", "BSD 3", "None"],
   },
   {
     type: "input",
-    message: "What commands should we run for dependencies?",
+    message: "What commands should be run to install dependencies?",
     name: "installations",
     default: "npm i",
   },
@@ -41,7 +41,12 @@ const questions = [
     type: "input",
     message: "What commands should be run for tests?",
     name: "test",
-    default: "npm run test",
+    default: "npm test",
+  },
+  {
+    type: "input",
+    message: "How does a user need to know about this project",
+    name: "about",
   },
   {
     type: "input",
@@ -56,15 +61,18 @@ const questions = [
 // });
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  fs.writeFile(fileName, data, (err) => {
+    err ? console.log(err) : console.log("File Success");
+  });
+}
 
 // TODO: Create a function to initialize app
 function init() {
   //present the user with questions
   inquirer.prompt(questions).then((data) => {
-    fs.writeFile("README.md", JSON.stringify(data), (err) => {
-      err ? console.log(err) : console.log("File Success");
-    });
+    const newData = generateMarkdown(data);
+    writeToFile("README.md", newData);
   });
 }
 
