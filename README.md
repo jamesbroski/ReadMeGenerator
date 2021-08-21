@@ -11,3 +11,5 @@ Once the user has finished all of the prompts with their desired information, th
 This tool is very useful as it will easily create README.md files for all future porjects with ease!
 
 Below is a screenshot/gif of what the user should expect when using this tool:
+
+![README md Generator (1)](https://user-images.githubusercontent.com/87332492/130307444-b300737d-a19a-4e7b-882b-f8a3dc6bb4aa.gif)<img width="1023" alt="Screen Shot 2021-08-20 at 8 15 33 PM" src="https://user-images.githubusercontent.com/87332492/130307454-ecd2ebc9-20d6-4f77-9961-201a62729a8c.png">
