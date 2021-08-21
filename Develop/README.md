@@ -1,43 +1,50 @@
-# ytytyytyt
-  ![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)
+# ReadMeGenerator
 
-  ## Description
-  ytytyytt
+![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
 
-  ## Table of Contents
-  *[Installation](#installation)
+## Description
 
-  *[Usage](#usage)
+This project will automatically create a README.md file based on user input with the CLI
 
-  *[License](#license)
+## Table of Contents
 
-  *[Contributing](#contributing)
+\*[Installation](#installation)
 
-  *[Tests](#tests)
+\*[Usage](#usage)
 
-  *[Questions](#questions)
+\*[License](#license)
 
-  ## Installation
-  npm i
-  
+\*[Contributing](#contributing)
 
-  ## Usage
-  ttytyt
+\*[Tests](#tests)
 
-  ## License
-    This project is licensed with BSD 3.
-    
+\*[Questions](#questions)
 
-  ## Contributing
-  tytytyyt
+## Installation
 
-  ## Tests
-  npm test
+npm i
 
-  ## Questions
-  "If you have any questions about the repo, open an issue or contact me directly at 
-  tyytyytyty. You can also find more of my work at tytytyty.
-  
+## Usage
 
-  ## License Links
-  [License: BSD 3](https://opensource.org/licenses/BSD-3-Clause)
+This project is awesome!
+
+## License
+
+    This project is licensed with Apache 2.0.
+
+## Contributing
+
+Please email me for the repo link
+
+## Tests
+
+npm test
+
+## Questions
+
+"If you have any questions about the repo, open an issue or contact me directly at
+james@gmail.com. You can also find more of my work at jamesbroski.
+
+## License Links
+
+[License: Apache 2.0](https://opensource.org/licenses/Apache-2.0)
